@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obituary Submission Successful</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Obituary Submitted Successfully</h1>
+        <p>Your obituary has been successfully submitted and is now available for viewing.</p>
+        <a href="{% url 'obituary_list' %}" class="button">View Obituaries</a>
+        <a href="{% url 'submit_obituary' %}" class="button">Submit Another Obituary</a>
+    </div>
+</body>
+</html>

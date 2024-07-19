@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Obituary Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Obituary Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'submit_obituary' %}">Submit an Obituary</a></li>
+                    <li><a href="{% url 'view_obituaries' %}">View Obituaries</a></li>
+                    <li><a href="{% url 'landing_page' %}">Landing Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Welcome to the Obituary Platform</h2>
+                <p>Here, you can submit obituaries, view submitted obituaries, and explore our landing page for more information.</p>
+            </section>
+            
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Easy obituary submission process.</li>
+                    <li>View and search through submitted obituaries.</li>
+                    <li>User-friendly interface for a seamless experience.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Obituary Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
